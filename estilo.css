@@ -1,0 +1,242 @@
+/* Estilos generales*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: whitesmoke;
+    line-height: 1.5em;/*defecto 10px = 1em => 1.5em =15px*/
+    }
+h1{
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 12px 0;
+    text-align: center;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+p{
+    margin: 0 0 1.5em 0; 
+    text-align: justify;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 15px;
+    
+}
+/* FIN Estilos generales*/
+
+/* Estilos Encabezado*/
+#main-header{
+    background-color: darkkhaki;
+    color: aliceblue;
+    height: 70px;
+    width:  100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+#main-header a{
+    color: aliceblue;
+}
+
+#logo-header{
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+
+}
+
+#logo-header .site-name{
+    display: block;
+    font-weight: 800;
+    font-size: 1.2em;
+
+}
+
+#logo-header .site-desc{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: aquamarine;
+}
+/* FIN Estilos Encabezado*/
+
+/* Navegacion */
+nav{
+    float: right;
+}
+nav ul{
+
+    list-style: none;
+    padding-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+
+}
+
+nav ul li a{
+    color: bisque;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: black;
+    transition: 0.2;
+    font-weight: bolder;
+    color: cyan;
+}
+
+
+/* Fin de Navegacion */
+
+
+/* Boton */
+.checkbtn{
+    font-size: 30px;
+    color: azure;
+    float: right;
+    margin-top: 25px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+/* Fin Boton */
+/* Inicio Contenido */
+#main-content{
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow:0 0 50px black ;
+    border-radius: 15px;
+
+
+}
+#main-content header, #main-content .content{
+    padding: 40px;
+
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+
+}
+.servicio{
+    width: 35%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicio .Violeta{
+    background: linear-gradient(to bottom,
+    violet,
+    white,
+    violet);
+    box-shadow: 0 12px 30px 0 blue;
+    text-align: justify;
+}
+.contenedor-servicio .Celeste{
+    background: linear-gradient(to bottom,
+    blue,
+    white,
+    blue);
+    box-shadow: 0 12px 30px 0 blue;
+    text-align: justify;
+}
+
+/* Fin Contenido */
+/* Inicio Footer */
+#main-footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#main-footer p{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+#main-footer a{
+    color: white;
+}
+/* Fin Footer */
+
+
+@media(max-width: 850px){
+    #main-content .servicio {
+        width: 90%;
+    }
+        /* boton de menu */
+        .checkbtn{
+            display: inline-block;
+            margin-top: -5px;
+            margin-right: 5px;
+            font-size: 60px;
+
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: black;
+            top: 54px;
+            left: -120%;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        nav ul li{
+            display: block;
+            margin: 0;
+            padding: 2%;
+            height: 35px;
+            line-height: 30px;
+
+        }
+        nav ul li a{
+            font-size: 20px;
+            text-decoration: none;
+        }
+        li:hover,:active{
+            background: linear-gradient(to bottom,
+            rgb(71, 0, 163),
+            rgb(10, 204, 253),
+            rgb(71, 0 ,163)
+            );
+            border-radius: 5px;
+            margin-left: 0;
+        }
+        nav ul li a:hover{
+            background: none;
+
+        }
+        #check:checked ~ ul {
+            left: -40px;
+        }
+    }

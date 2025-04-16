@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+
+}
+
+.container{
+    max-width: 600px;
+    margin: 80px auto 0 auto;
+    padding: 40px;
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px gray;
+
+}
+.form-group{
+    margin-bottom: 20px;
+}
+label
+{
+    font-weight: bold
+}
+input[type ="text"],textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+textarea{
+    resize: vertical;
+}
+button[type=submit]{
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#main-footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#main-footer p{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+#main-footer a{
+    color: white;
+}

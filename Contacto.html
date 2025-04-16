@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/estiloC.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <!-- Inicio de cabecera -->
+    <header id="main-header">
+        <a href="#" id="logo-header"> 
+            <span class="site-name">Nahuel Llanos</span>
+            <span class="site-desc">Diseño Web- PySW/HTML-CSS</span>
+        </a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                ☰
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="AcercaDe.html">Acerca de...</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de cabecera -->
+    <div class="container">
+        <h2>
+            Formulario de Contacto
+        </h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>    
+            <div>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido" required>
+            </div>
+            <div>
+                <label for="E-Mail">E-Mail:</label>
+                <input type="text" name="E-Mail" id="E-Mail" required>
+            </div>
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea type="text" id="mensaje" name="mensaje"  rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer id="main-footer">
+        <p>
+            &copy; 2025 - Todos <a href="https://www.instagram.com" target="_blank">Diseño Web - PySW-UNJU-LQ</a>
+        </p>
+    </footer>
+</body>
+</html>
